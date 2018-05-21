@@ -1,0 +1,66 @@
+﻿<script type="text/javascript">
+/*Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation), где
+arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+переданного значения операции выполнить одну из арифметических операций (использовать
+функции из пункта 3) и вернуть полученное значение (использовать switch).
+*/
+	var arg1 = +prompt("Введите целое число А, неравное 0:");
+	var arg2 = +prompt("Введите целое число B, неравное 0:");
+	 
+	 if (arg1>0 && arg2>0){
+		if (arg1>arg2){ 
+			var operation= "вычитание 1";//*a-b;
+			}
+		else {
+			var operation= "вычитание 2";//b-a;
+			}
+		}
+	
+	 else{
+	 	if (arg1<0 && arg2<0){ 
+	 		var operation= "произведение";//a*b;
+	 		} 
+
+	 	else {
+	 		var operation= "сумма";//a+b;
+	 		}
+ 	 	}
+	
+	function mathOperation(arg1, arg2, operation){
+		switch(operation){
+		case "вычитание 1":
+			var result=arg1-arg2;
+		break;
+		case "вычитание 2":
+			var result=arg2-arg1;
+		break;
+		case "произведение":
+			var result=arg1*arg2;
+		break;
+		case "сумма":
+			var result=arg2+arg1;
+		break;
+		}
+	return result;
+	 }
+	 alert(mathOperation(arg1, arg2, operation));
+	 alert(operation);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
