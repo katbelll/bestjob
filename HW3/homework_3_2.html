@@ -1,0 +1,43 @@
+﻿<script type="text/javascript">
+	/*С помощью цикла do…while написать функцию для вывода чисел от 0 до 10, чтобы результат выглядел так:
+0 – это ноль
+1 – нечетное число
+2 – четное число
+3 – нечетное число*/
+var n=10;
+var i=0;
+function desyatka(i){
+	if (i==0) {
+		var res="0 - это ноль<br>";
+	} else	
+			{if (i==1||i==3||i==5||i==7||i==9) {
+				var res=i+"- нечетное число<br>";
+			} else {
+				var res=i+"- четное число<br>";
+			}}
+return res;
+}
+do{
+document.write(desyatka(i));
+i++;
+}while(i<=n)
+		
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
